@@ -1,0 +1,18 @@
+// Mixin de reset padding y margin
+@mixin reset-pm {
+    margin: 0;
+    padding: 0;
+}
+
+// Mixin de flexbox
+@mixin flex( $dir: column, $justify: center, $align: center ) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin size( $h: 100%, $w: 100%) {
+    height: $h;
+    width: $w;
+}

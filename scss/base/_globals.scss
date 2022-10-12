@@ -1,0 +1,12 @@
+/* Globals */
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+    @include reset-pm;
+}

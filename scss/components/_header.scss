@@ -1,0 +1,37 @@
+/* Navbar */
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #111;
+    z-index: 10;
+    &__nav {
+        max-width: 1200px;
+        padding: 0 1rem;
+        margin: 0 auto;
+        @include size( 70px, 100% );
+        @include flex( row, space-between, center );
+    }
+    &__logo {
+        color: #fff;
+        font-size: 2.3rem;
+    }
+    &__wrapper {
+        color: #fff;
+        display: flex;
+        gap: 1.5rem;
+        list-style-type: none;
+    }
+    &__item {
+        padding: 1rem;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+    &__item--cta {
+        background-color: #fff;
+        color: #111;
+        border-radius: 1rem;
+        &:hover {
+            background-color: pink;
+        }
+    }
+}
